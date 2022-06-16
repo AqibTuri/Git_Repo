@@ -1,2 +1,3 @@
 It is Git_2
 It is Git_2
+This change is made by Muzafar in branch 2 file Git_2.txt
