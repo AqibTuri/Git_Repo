@@ -189,7 +189,7 @@
     }
 
     //At start player 1 is active
-    document.querySelector(".player1Active").classList.add("btn-success");
+    document.querySelector(".player1Active").classList.add("btn-danger");
     document.querySelector(".player2Active").classList.remove("btn-success");
 
     boxes.forEach((element,index) => {
@@ -205,12 +205,12 @@
              player1.turn=false;
              player2.turn=true;
              document.querySelector(".player2Active").classList.add("btn-success");
-             document.querySelector(".player1Active").classList.remove("btn-success");
+             document.querySelector(".player1Active").classList.remove("btn-danger");
 
               if (checkWinner(player1.sign))
               {
                   stopGame();
-                  document.querySelector(".player1Active").classList.remove("btn-success");
+                  document.querySelector(".player1Active").classList.remove("btn-danger");
                   document.querySelector(".player2Active").classList.remove("btn-success");
                   alert("Winner: Player 1 ")
               }
@@ -223,13 +223,13 @@
                 player2.turn=false;
                 player1.turn=true;
 
-                document.querySelector(".player1Active").classList.add("btn-success");
+                document.querySelector(".player1Active").classList.add("btn-danger");
                 document.querySelector(".player2Active").classList.remove("btn-success");
 
                 if (checkWinner(player2.sign))
                 {
                   stopGame();
-                  document.querySelector(".player1Active").classList.remove("btn-success");
+                  document.querySelector(".player1Active").classList.remove("btn-danger");
                   document.querySelector(".player2Active").classList.remove("btn-success");
                   alert("Winner: Player 2 ")
                 }
